@@ -20,7 +20,7 @@ app.use('/uploads',express.static(__dirname+'/uploads'));
 const salt=bcrypt.genSaltSync(10);
 
 
-mongoose.connect("mongodb+srv://aksyout:6oeyW06Q9YlcRhIR@backenddb.ti4wwqw.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB")
+mongoose.connect("<connection string>")
 .then(()=>{ console.log("Connected to database");})
 .catch(()=>{console.log("Connection failed");});
 const secretKey='alksklajllkaefj392u23';
